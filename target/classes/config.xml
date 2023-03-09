@@ -10,7 +10,7 @@
 	                    http://www.springframework.org/schema/aop
 	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="t1" class="kr.hs.study.beans.TestBean"/>
+    <bean id="t1" class="kr.hs.study.beans.TestBean" scope="prototype"/>
 <!--    TestBean t1 = new TestBean();-->
 
     <bean id="t2" class="kr.hs.study.beans.TestBean2" lazy-init="true"/>
