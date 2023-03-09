@@ -7,7 +7,8 @@ public class Main {
     public static void main(String[] args) {
         //설정파일 (config.xml)을 로딩하고 실행하는 것
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("config.xml");
-        ctx.getBean("t1");
+        TestBean obj1 = ctx.getBean("t1", TestBean.class); //t1의 주소값이 들어감
+        System.out.println("obj1: "+obj1);
         ctx.close();
 
 
