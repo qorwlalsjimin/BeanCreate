@@ -12,6 +12,13 @@ public class Main {
 
         TestBean2 obj2 = ctx.getBean("t2", TestBean2.class); //t2의 주소값이 들어감
         System.out.println("obj2: "+obj2);
+
+        TestBean obj3 = ctx.getBean("t3", TestBean.class);
+        System.out.println("obj3: "+obj3);
+
+        TestBean obj4 = ctx.getBean("t3", TestBean.class); //singleton
+        System.out.println("obj4: "+obj4);
+
         ctx.close();
 
 
