@@ -1,4 +1,4 @@
-package kr.hs.study;
+package kr.hs.study.beans;
 
 public class TestBean {
     TestBean(){
