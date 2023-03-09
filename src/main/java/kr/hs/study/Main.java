@@ -2,6 +2,7 @@ package kr.hs.study;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        //TestBean의 객체 t1 생성
+        TestBean t1 = new TestBean();
     }
 }
