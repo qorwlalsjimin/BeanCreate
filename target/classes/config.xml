@@ -12,4 +12,6 @@
 
     <bean id="t1" class="kr.hs.study.beans.TestBean"/>
 <!--    TestBean t1 = new TestBean();-->
+
+    <bean id="t2" class="kr.hs.study.beans.TestBean2" lazy-init="true"/>
 </beans>

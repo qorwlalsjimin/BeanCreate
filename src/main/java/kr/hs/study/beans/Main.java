@@ -9,6 +9,9 @@ public class Main {
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("config.xml");
         TestBean obj1 = ctx.getBean("t1", TestBean.class); //t1의 주소값이 들어감
         System.out.println("obj1: "+obj1);
+
+        TestBean2 obj2 = ctx.getBean("t2", TestBean2.class); //t2의 주소값이 들어감
+        System.out.println("obj2: "+obj2);
         ctx.close();
 
 
